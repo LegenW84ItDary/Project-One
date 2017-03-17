@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Project ST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body style="background-color:#AB1B2A">
+<!--navigation-->
+	<div class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+            <img src="assets/Logo.png" width="60" height="50">
+			<a href="index.html" class="navbar-brand" style="font-family:Exo">Samuel Terry / About</a>
+			<!--collapsale menu trigger-->
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html" style="font-family:Exo">Home</a></li>
+					<li><a href="about.html" style="font-family:Exo">About</a></li>
+				<!--dropdown-->
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-family:Exo">Review <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Xbox.html" style="font-family:Exo">Xbox</a></li>
+                            <li><a href="PlayStation.html" style="font-family:Exo">PlayStation</a></li>
+                        </ul>
+                    </li>
+					<li><a href="#contact" data-toggle="modal" style="font-family:Exo">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class ="container">
+    <div class="row">
+        <div class="col-lg-9">
+        <div class="panel panel-default">
+            <div class="panel-body">
+            <div class="panel-header">
+                <h3 style="font-family:Exo">About the website.</h3>
+                </div>
+            <img src="assets/sportsHall.jpg" class="featureImg" width="100%"/>
+                <p style="font-family:Roboto"><i class="fa fa-info" aria-hidden="true"></i> On this site we will be giving a review on the different games and the different platforms they are on. We will be discussing the most popular games that are on the market. We will talk about the games that have been out for the past couple of years. </p>
+                
+                <p style="font-family:Roboto"><i class="fa fa-info" aria-hidden="true"></i> The games that we will be going into detail with are going to be only a few that we have tested for are selfs. </p>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="col-lg-3">
+        <div class="list-group">
+            <a href="Xbox.html" class="list-group-item">
+            <h4 class="list-group-item-header" style="font-family:Exo"><i class="fa fa-trophy" aria-hidden="true"></i> Xbox</h4>
+                <p style="font-family:Roboto">Xbox is one of the most popular consoles out there along with playstation and we will be disscusing what would be an ideal game to play at this current point in time.</p>
+            </a>
+            <a href="PlayStation.html" class="list-group-item">
+            <h4 class="list-group-item-header" style="font-family:Exo"><i class="fa fa-gamepad" aria-hidden="true"></i> PlayStation</h4>
+                <p style="font-family:Roboto">Playstation is another popular console that is currently in compatition with xbox to give the gaming community the best experience when playing their games.</p>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+        <!--row 1-->
+ <div class="container">
+		<div class="row">
+		<!--Article 1-->
+			<div class="col-md-4">
+				<div class="thumbnail">
+				  	<img src="assets/MyPhoto.jpg">
+				  	  </div>
+                </div>
+                    <div class="col-lg-8">
+                        <div class="thumbnail">
+                    <div class="caption">
+                        <h4>About Me</h4>
+                        <p>Hi, I'm Sam and I'm currently studying BTEC Level 3, where I have been tasked to create a website for a games review to give my opinion on the games that I am reviewing. This site has been made from scratch, I have been helped to construct this site by fellow peers and my tutor. Website is one of many courses that I have done at college.</p>
+                        <a href="https://twitter.com/" class="btn btn-primary" role="button">Twitter</a> 
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                        <!--footer-->
+	<div class="navbar navbar-default navbar-static-bottom">
+		<div class="container">
+			<p class="navbar-text" style="font-family:Exo">Site Built by Samuel Terry</p>
+			<a class="navbar-btn btn btn-success pull-right" href="#contact" data-toggle="modal" style="font-family:Exo">Contact Us</a>
+		</div>
+	</div>
+	
+<!--modal-->
+	<div class="modal fade" id="contact" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<!--Modal Form Start-->
+			<form class="form-horizontal">
+				<div class="modal-header"><!--HEADER-->
+					<h3>Contact Us</h3>
+				</div>
+				
+				<div class="modal-body"><!--BODY-->
+					<div class="form-group"><!--name-->
+						<label for="contact-name" class="col-lg-2 control-label" style="font-family:Roboto">Name</label>
+						<div class="col-lg-10">
+							<input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+						</div>
+					</div>
+					<div class="form-group"><!--email-->
+						<label for="contact-email" class="col-lg-2 control-label" style="font-family:Roboto">Email</label>
+						<div class="col-lg-10">
+							<input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+						</div>
+					</div>
+					<div class="form-group"><!--message-->
+						<label for="contact-msg" class="col-lg-2 control-label" style="font-family:Roboto">Message</label>
+						<div class="col-lg-10">
+							<textarea class="form-control" rows="8"></textarea>
+						</div>
+					</div>
+				</div>
+				
+				<div class="modal-footer"><!--FOOTER-->
+					<a class="btn btn-success" type="submit" style="font-family:Roboto">Submit</a>
+					<a class="btn btn-default" data-dismiss="modal">
+						Close
+					</a>
+				</div>
+			</form>	
+			<!--Modal Form End-->	
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
